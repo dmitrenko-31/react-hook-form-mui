@@ -136,7 +136,7 @@ export default function MultiSelectElement<TFieldValues extends FieldValues>({
                   ? rest.renderValue
                   : showChips
                   ? (selected) => (
-                      <div style={{display: 'flex', flexWrap: 'wrap'}}>
+                      <div style={{display: 'flex', flexWrap: 'wrap', gap: 0.5}}>
                         {(preserveOrder
                           ? options.filter((option) =>
                               (selected as any[]).includes(option)
